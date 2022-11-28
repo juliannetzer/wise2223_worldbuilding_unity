@@ -5,8 +5,6 @@
 
 To import Assets into your project, just drag and drop them into the "project"/Assets-window
 
-SCREENSHOT ASSETS
-
 Supported file formats: 
 - .fbx (usually works best) 
 - .obj 
@@ -34,7 +32,18 @@ Note: you can also use other file formats (link .blend etc. if the corresponding
 
 ### How to use "Everything"-models: 
 The models are all stored in one fbx-file, in unity visible as one prefab. To get to the single models you have to place the big file in the scene, then right click and select "Prefab - Unpack completely". Then you can choose the models that you need and drag and drop them to the project window, which creates a new prefab with only the models you need.  
-Additionally the colors in the everything models are stored as vertex colors, so you can't see them with a normal shader/material, I included a material called "Everything", which you can drag and drop on the models to see the colors. 
+
+Additionally the colors in the everything models are stored as vertex colors, so you can't see them with a normal shader/material, so we have to build our first shader with shader graph: 
+Create -> Shader Graph -> URP -> Lit Shader Graph 
+Select the shader in the project window and click on "Open Shader Editor" Unity should now look like this: 
+![](images/shadergraph1.jpeg)
+
+Right click somewhere in the dark area and select "Create Node" and search for "Vertex Color", now connect the Out-Output with the "Base Color"-Input and click "Save". 
+
+![](images/shadergraph2.jpeg)
+
+Now you can create a new material (Assets -> Create -> Material) and apply the shader to it (select the material in the Project window, go to the inspector and search for the name of your shader in the dropdown "Shader"-Menu). 
+
 
 ## Online Sculpting Tools
 - [SculptGL](https://stephaneginier.com/sculptgl/)
@@ -54,7 +63,6 @@ Most materials have a certain set of textures (images) applied. The most importa
 ## Create a new material: 
 
 Click on Assets -> Create -> Material
-SCREENSHOT
 
 Now you can add some textures and change the colors. 
 To apply the material to an object, just drag and drop it onto the object. 
@@ -95,13 +103,11 @@ Probably a problem with the renderpipeline, find the material in the project win
 
 ** Task: Search for Assets for your world. Already import them into Unity, if something doesn't look as expected see the troubleshoot section, but don't lose too much time on trying to fix single assets. ** 
 
-# Building the Terrain & bring in the Assets (1h) 
+# <a name="terrain"></a>Building the Terrain & bring in the Assets
 ![](images/placing.jpeg)
 
-
 ## Terrain Tool  
-SCREENSHOT TERRAIN TOOL
-
+![](images/terraintools.jpeg)
 With the Terrain Tool, you can very easily create landscapes and add vegetation. You can find a good tutorial here: 
 [How to build beautiful landscapes in Unity using Terrain Tools | Tutorial](https://www.youtube.com/watch?v=smnLYvF40s4)
 
@@ -117,7 +123,7 @@ Since not all Vegetatation-Assets work with the terrain tool, here are some i fo
 - Grass/Flowers: https://assetstore.unity.com/packages/2d/textures-materials/nature/grass-flowers-pack-free-138810
 
 ## Probuilder 
-SCREENSHOT PROBUILDER
+![](images/probuilder.jpeg)
 With Probuilder you can quickly build simple geometric forms directly in unity. 
 
 [ProBuilder Tutorial](https://www.youtube.com/watch?v=YtzIXCKr8Wo)
@@ -141,8 +147,9 @@ Instructions:
 3. Enter the amount, distance etc. & drag your Prefab into the Prefab box 
 4. Click on "Generate Objects"
 
+**Task: Place all of your assets in the scene and build a terrain or the basic structure of your scene with ProBuilder.**
 
-# Lighting the Scene (1h)
+# Lighting the Scene
 ![](images/lights.jpeg)
 
 ## Realtime Lights 
@@ -194,6 +201,8 @@ There are multiple ways to create Fog in Unity, the easiest is the built-in Fog 
 
 Just click on Fog and select a color and density. 
 ![](images/fog.jpeg)
+
+**Add lighting to your scene**
 
 # Sounds & Animations 
 
