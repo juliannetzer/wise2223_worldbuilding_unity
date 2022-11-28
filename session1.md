@@ -90,7 +90,7 @@ Conversion Table for using Polyhaven Materials:
 
 ## Troubleshooting
 
-### Material is displayed pinks: 
+### Material is displayed pink: 
 Probably a problem with the renderpipeline, find the material in the project window, select it and then click on "Edit -> Rendering -> Materials -> Convert Selected Built-in Materials to URP". If this does not work, either create a new material and assign it, or if you can get the asset in a different fileformat try that. 
 
 ### Imported object does not have a color/texture 
