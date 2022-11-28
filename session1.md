@@ -30,20 +30,6 @@ Note: you can also use other file formats (link .blend etc. if the corresponding
 
 > Trees are rather difficult to render in Unity, so either use Low-Poly Versions, or you can also find some in the Assets Store (e.g. [Realistic Pines](https://assetstore.unity.com/packages/3d/vegetation/trees/realistic-pine-tree-pack-232166), [Polygon Trees](https://assetstore.unity.com/packages/3d/vegetation/trees/polygon-trees-224068))
 
-### How to use "Everything"-models: 
-The models are all stored in one fbx-file, in unity visible as one prefab. To get to the single models you have to place the big file in the scene, then right click and select "Prefab - Unpack completely". Then you can choose the models that you need and drag and drop them to the project window, which creates a new prefab with only the models you need.  
-
-Additionally the colors in the everything models are stored as vertex colors, so you can't see them with a normal shader/material, so we have to build our first shader with shader graph: 
-Create -> Shader Graph -> URP -> Lit Shader Graph 
-Select the shader in the project window and click on "Open Shader Editor" Unity should now look like this: 
-![](images/shadergraph1.jpeg)
-
-Right click somewhere in the dark area and select "Create Node" and search for "Vertex Color", now connect the Out-Output with the "Base Color"-Input and click "Save". 
-
-![](images/shadergraph2.jpeg)
-
-Now you can create a new material (Assets -> Create -> Material) and apply the shader to it (select the material in the Project window, go to the inspector and search for the name of your shader in the dropdown "Shader"-Menu). 
-
 
 ## Online Sculpting Tools
 - [SculptGL](https://stephaneginier.com/sculptgl/)
@@ -101,7 +87,24 @@ Probably a problem with the renderpipeline, find the material in the project win
 	- select the asset in the Project window and click on "Extract Textures" and/or "Extract Materials" in the Inspector (in the "Materials" Tab)
 	-  If there are still no materials/textures you have to manually create them/ or find a new asset
 
+## How to use "Everything"-models: 
+The models are all stored in one fbx-file, in unity visible as one prefab. To get to the single models you have to place the big file in the scene, then right click and select "Prefab - Unpack completely". Then you can choose the models that you need and drag and drop them to the project window, which creates a new prefab with only the models you need.  
+
+Additionally the colors in the everything models are stored as vertex colors, so you can't see them with a normal shader/material, so we have to build our first shader with shader graph: 
+Create -> Shader Graph -> URP -> Lit Shader Graph 
+Select the shader in the project window and click on "Open Shader Editor" Unity should now look like this: 
+![](images/shadergraph1.jpeg)
+
+Right click somewhere in the dark area and select "Create Node" and search for "Vertex Color", now connect the Out-Output with the "Base Color"-Input and click "Save". 
+
+![](images/shadergraph2.jpeg)
+
+Now you can create a new material (Assets -> Create -> Material) and apply the shader to it (select the material in the Project window, go to the inspector and search for the name of your shader in the dropdown "Shader"-Menu). 
+
+> Advanced: [Shader Graph Tutorial](https://www.youtube.com/watch?v=Ar9eIn4z6XE), [The book of shaders](https://thebookofshaders.com/)
+
 ** Task: Search for Assets for your world. Already import them into Unity, if something doesn't look as expected see the troubleshoot section, but don't lose too much time on trying to fix single assets. ** 
+
 
 # <a name="terrain"></a>Building the Terrain & bring in the Assets
 ![](images/placing.jpeg)
@@ -122,12 +125,13 @@ Since not all Vegetatation-Assets work with the terrain tool, here are some i fo
 
 - Grass/Flowers: https://assetstore.unity.com/packages/2d/textures-materials/nature/grass-flowers-pack-free-138810
 
+> Other (commercial) Tool [Gaia Pro](https://assetstore.unity.com/packages/tools/terrain/gaia-pro-2021-terrain-scene-generator-193476)
+
 ## Probuilder 
 ![](images/probuilder.jpeg)
 With Probuilder you can quickly build simple geometric forms directly in unity. 
 
 [ProBuilder Tutorial](https://www.youtube.com/watch?v=YtzIXCKr8Wo)
-
 
 ## Scatter Tool: 
 ![](images/scatter_1.jpeg)
@@ -147,9 +151,11 @@ Instructions:
 3. Enter the amount, distance etc. & drag your Prefab into the Prefab box 
 4. Click on "Generate Objects"
 
+> Good place to get started with coding in Unity: [catlikecoding](https://catlikecoding.com/unity/tutorials/)
+
 **Task: Place all of your assets in the scene and build a terrain or the basic structure of your scene with ProBuilder.**
 
-# Lighting the Scene
+# <a name="light"></a>Lighting the Scene
 ![](images/lights.jpeg)
 
 ## Realtime Lights 
@@ -204,7 +210,7 @@ Just click on Fog and select a color and density.
 
 **Add lighting to your scene**
 
-# Sounds & Animations 
+# <a name="sounds"></a>Sounds & Animations 
 
 ## Animation 
 
@@ -229,6 +235,7 @@ Places to get free sounds:
 - [Soundcloud](https://soundcloud.com/)
 [Tutorial: Sound Component in Unity](https://learn.unity.com/tutorial/working-with-audio-components-2019-3)
 
+> Advanced: [Unity at GDC - Spatial Audio and immersion: VR's second sense](https://www.youtube.com/watch?v=M-MhP2T3Adw) 
 
 
 
