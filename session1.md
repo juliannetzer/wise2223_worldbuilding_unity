@@ -218,14 +218,16 @@ Just click on Fog and select a color and density.
 
 ## Animation 
 
-[Tutorial Animation in Unity](https://learn.unity.com/tutorial/working-with-animations-and-animation-curves#)
-[Tutorial: Using the Animator in Unity](https://www.youtube.com/watch?v=gON_hhhvheI&t=969s)
+- [Tutorial Animation in Unity](https://learn.unity.com/tutorial/working-with-animations-and-animation-curves#)
+- [Tutorial: Using the Animator in Unity](https://www.youtube.com/watch?v=gON_hhhvheI&t=969s)
 
 ## Sound 
 
 To add sound to a scene create a new Audio Source: GameObject -> Audio -> Audio Source. 
 
 The just drag and drop your soundfile. 
+
+- [Tutorial: Sound Component in Unity](https://learn.unity.com/tutorial/working-with-audio-components-2019-3)
 
 Supported file formats: 
 - AIFF 
@@ -237,7 +239,6 @@ Places to get free sounds:
 - [freesounds.org](https://freesound.org/people/Nox_Sound/): Different licenses
 - [OpenGameArt](https://opengameart.org/art-search-advanced?field_art_type_tid%5B%5D=13)
 - [Soundcloud](https://soundcloud.com/)
-[Tutorial: Sound Component in Unity](https://learn.unity.com/tutorial/working-with-audio-components-2019-3)
 
 > Advanced: [Unity at GDC - Spatial Audio and immersion: VR's second sense](https://www.youtube.com/watch?v=M-MhP2T3Adw) 
 
