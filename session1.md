@@ -20,13 +20,15 @@ Note: you can also use other file formats (link .blend etc. if the corresponding
 ## Best places to get free 3D-Assets 
 
 - [Unity Asset Store](https://assetstore.unity.com/?category=3d%2Fenvironments&free=true&orderBy=1): Large library of assets, specifically for unity, sometimes with animations 
-- [Sketchfab](https://sketchfab.com): Large library for free Assets, also from museums etc., different quality & licenses 
+- [Sketchfab](https://sketchfab.com): Large library for free Assets, also from museums etc., mixed quality & licenses 
 - [Polyhaven](https://polyhaven.com/models): Not that many models, but all can be used for any purpose (commercial and personal)
 - [Everything library](https://www.davidoreilly.com/library): library of objects from the (very good) game "Everything", see hint below, a lot of models, all in the same style (low poly), can be used in all projects, but an attribution is necessary[license](https://creativecommons.org/licenses/by/4.0/)
 - [NASA 3D Models](https://nasa3d.arc.nasa.gov/models): library of space related objects, different quality, but some are quiet nice
 - [Three D Scans](https://threedscans.com/): library of 3d scanned statues & some animals, very detailed 
-- [ArtStation](https://www.artstation.com/marketplace/game-dev/assets?section=free): Plattform, very different quality, different
+- [ArtStation](https://www.artstation.com/marketplace/game-dev/assets?section=free): Plattform, mixed quality, different
 - [Quaternius](https://quaternius.com/): nice low poly packs, most of them free to use
+- [OpenGameArt](https://opengameart.org/art-search-advanced?keys=&field_art_type_tid%5B%5D=10&sort_by=count&sort_order=DESC): a lot, mixed quality
+- [Dimensiva](https://dimensiva.com/free-3d-models/): mostly furniture
 
 > Trees are rather difficult to render in Unity, so either use Low-Poly Versions, or you can also find some in the Assets Store (e.g. [Realistic Pines](https://assetstore.unity.com/packages/3d/vegetation/trees/realistic-pine-tree-pack-232166), [Polygon Trees](https://assetstore.unity.com/packages/3d/vegetation/trees/polygon-trees-224068))
 
@@ -90,6 +92,8 @@ Probably a problem with the renderpipeline, find the material in the project win
 ## How to use "Everything"-models: 
 The models are all stored in one fbx-file, in unity visible as one prefab. To get to the single models you have to place the big file in the scene, then right click and select "Prefab - Unpack completely". Then you can choose the models that you need and drag and drop them to the project window, which creates a new prefab with only the models you need.  
 
+> prefab: something like a template, lets you save a costum GameObject with all components, settings, and children as one asset. 
+
 Additionally the colors in the everything models are stored as vertex colors, so you can't see them with a normal shader/material, so we have to build our first shader with shader graph: 
 Create -> Shader Graph -> URP -> Lit Shader Graph 
 Select the shader in the project window and click on "Open Shader Editor" Unity should now look like this: 
@@ -103,7 +107,7 @@ Now you can create a new material (Assets -> Create -> Material) and apply the s
 
 > Advanced: [Shader Graph Tutorial](https://www.youtube.com/watch?v=Ar9eIn4z6XE), [The book of shaders](https://thebookofshaders.com/)
 
-** Task: Search for Assets for your world. Already import them into Unity, if something doesn't look as expected see the troubleshoot section, but don't lose too much time on trying to fix single assets. ** 
+**Task: Search for Assets for your world. Already import them into Unity, if something doesn't look as expected see the troubleshoot section, but don't lose too much time on trying to fix single assets.** 
 
 
 # <a name="terrain"></a>Building the Terrain & bring in the Assets
