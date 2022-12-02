@@ -1,26 +1,5 @@
 # Session 2 - Virtual Filmmaking 
 
-
-# <a name="sounds"></a>Sound 
-
-To add sound to a scene create a new Audio Source: GameObject -> Audio -> Audio Source. 
-
-Then drag and drop your soundfile. 
-
-- [Tutorial: Sound Component in Unity](https://learn.unity.com/tutorial/working-with-audio-components-2019-3)
-
-Supported file formats: 
-- AIFF 
-- WAV 
-- MP3
-- Ogg 
-
-Places to get free sounds: 
-- [freesounds.org](https://freesound.org/people/Nox_Sound/): Different licenses
-- [OpenGameArt](https://opengameart.org/art-search-advanced?field_art_type_tid%5B%5D=13)
-- [Soundcloud](https://soundcloud.com/)
-
-
 # <a name="Animations"></a>Animations 
 ![](images/animations.jpeg)
 
@@ -75,7 +54,61 @@ Right click on the left side again and select "Animation Track" (always make sur
 ![](images/animationtimeline.gif)
 
 
-# <a name="cinemachine"></a>Animations - Cinemachine 
+# <a name="cinemachine"></a>Cinemachine 
+With Cinemachine you can create complex camera behaviours without coding, like following a target, switching between different cameras, blending camera positions etc. 
+
+## Virtual Cameras
+Cinemachine works with so called *Virtual Cameras*. GameObjects that tell the MainCamera how to behave, so its always important, that you still have a normal camera (GameObject -> Camera) in your Scene. You can create Virtual Cameras by clicking on GameObject -> Cinemachine -> Virtual Camera this will add a GameObject called "CM vcam1" in your scene, this GameObject now controls the position of the Main Camera. 
+![](images/virtualcamera.jpeg)
+
+## Blending/ Switching between two virtual cameras
+Lets create two virtual Cameras and switch between them in the Timeline: 
+Create another Virtual Camera and position both cameras in different spots, so move the CM vcam1 & CM vcam2 GameObject in the Scene View.
+
+> To get a preview of what the cameras see switch to Game view, i would suggest to split the window that you can see the scene view and the game view at the same time: ![](images/split.gif)
+
+To Switch between the cameras in the preview you can just click on "Solo" in the inspector, when you select the virtual camera you want to preview. 
+![](images/solo.gif)
+
+The next step is to switch between the cameras in the Timeline, so select the *Director*-GameObject again and and drag and drop the Main Camera in the left field of the Timeline window and select "Add Cinemachine Track". Now you can drag and drop you virtual cameras in the Cinemachine Track and arrange them: 
+![](images/timelinecinemachine.gif)
+
+If you overlap the two virtual cameras Unity with blend between the two positions: 
+![](images/blending.gif)
+
+## Looking at a target 
+Cinemachine cameras can also automatically look at a moving target: Select the Virtual Camera and drag and drop the moving GameObject in the "Look At" field. 
+![](images/lookat.gif)
+
+## Following a target
+The same also works for following a target: Select the Virtual Camera and just drag and drop the target in the "Follow" field. 
+![](images/following.gif)
+
+## Dollytrack 
+
+# <a name="cinemachine"></a>Post Processing 
+
+
+# <a name="sounds"></a>Sound 
+
+To add sound to a scene create a new Audio Source: GameObject -> Audio -> Audio Source. 
+
+Then drag and drop your soundfile. 
+
+- [Tutorial: Sound Component in Unity](https://learn.unity.com/tutorial/working-with-audio-components-2019-3)
+
+Supported file formats: 
+- AIFF 
+- WAV 
+- MP3
+- Ogg 
+
+Places to get free sounds: 
+- [freesounds.org](https://freesound.org/people/Nox_Sound/): Different licenses
+- [OpenGameArt](https://opengameart.org/art-search-advanced?field_art_type_tid%5B%5D=13)
+- [Soundcloud](https://soundcloud.com/)
+
+
 
 
 
