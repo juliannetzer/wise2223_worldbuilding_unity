@@ -114,8 +114,10 @@ Post Processing allows you to add multiple camera effects to your output image, 
 
 To use the effects first create an empty GameObject and add the "Volume" Component to it: 
 ![](images/post1.jpeg)
+
 Then create a new profile: 
 ![](images/post2.jpeg)
+
 And add the effects with "Add Override": 
 ![](images/post3.jpeg)
 
