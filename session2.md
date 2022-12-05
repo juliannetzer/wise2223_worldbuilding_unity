@@ -1,6 +1,6 @@
 # Session 2 - Virtual Filmmaking 
 
-# <a name="Animations"></a>Animations 
+# <a name="animations"></a>Animations 
 ![](images/animations.jpeg)
 
 ## Animations window 
@@ -94,7 +94,7 @@ Now you can change the Path of the Dolly Track when selecting the DollyTrack Gam
 And adjust the speed when selecting the DollyCart-GameObject: 
 ![](images/dolly2.jpeg)
 
-Then create a new Virtual Camera (GameObject -> Cinemachine -> Virtual Camera) and select the DollyCart-GameObject as the follow target. In the Body-section you can then select "Tracked Dolly", drag and drop your Path and enable the Auto Dolly Feature: 
+Then create a new Virtual Camera (GameObject -> Cinemachine -> Virtual Camera) and select the DollyCart-GameObject as the follow target. In the Body-section you can then select "Tracked Dolly", drag and drop your Path (the DollyTrack-GameObject) and enable the Auto Dolly Feature: 
 ![](images/dolly3.jpeg)
 
 When you press play, the Virtual Camera should follow your Dolly Cart. 
@@ -107,7 +107,7 @@ This lets you control the camera with the arrow-keys and the mouse, so you can f
 
 Another more advanced plugin is the [Unity Virtual Camera App](https://apps.apple.com/us/app/unity-virtual-camera/id1478175507). This allows you to control your virtual camera with your phone. 
 
-# <a name="post-processing"></a>Post Processing 
+# <a name="postprocessing"></a>Post Processing 
 ![](images/postprocessing.jpg)
 
 Post Processing allows you to add multiple camera effects to your output image, like color grading, bloom, motion blur, etc. 
