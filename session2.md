@@ -85,9 +85,53 @@ The same also works for following a target: Select the Virtual Camera and just d
 ![](images/following.gif)
 
 ## Dollytrack 
+![](images/Dolly.gif)
+You can also create a Dolly to control the movement of your Virtual Camera. Go to GameObject -> Cinemachine -> Dollytrack with Cart. 
 
-# <a name="cinemachine"></a>Post Processing 
+Now you can change the Path of the Dolly Track when selecting the DollyTrack Gameobject: 
+![](images/dolly1.jpeg)
 
+And adjust the speed when selecting the DollyCart-GameObject: 
+![](images/dolly2.jpeg)
+
+Then create a new Virtual Camera (GameObject -> Cinemachine -> Virtual Camera) and select the DollyCart-GameObject as the follow target. In the Body-section you can then select "Tracked Dolly", drag and drop your Path and enable the Auto Dolly Feature: 
+![](images/dolly3.jpeg)
+
+When you press play, the Virtual Camera should follow your Dolly Cart. 
+
+# Flycam and other ways to control your virtual camera
+
+Since we are producing our film in real-time you can also create the camera movement on the fly, while recording. There are multiple plugins, a simple one is this one:
+- [Free Fly Camera](https://assetstore.unity.com/packages/tools/camera/free-fly-camera-140739#reviews) 
+This lets you control the camera with the arrow-keys and the mouse, so you can fly through your virtual scene to record your film. 
+
+Another more advanced plugin is the [Unity Virtual Camera App](https://apps.apple.com/us/app/unity-virtual-camera/id1478175507). This allows you to control your virtual camera with your phone. 
+
+# <a name="post-processing"></a>Post Processing 
+![](images/postprocessing.jpg)
+
+Post Processing allows you to add multiple camera effects to your output image, like color grading, bloom, motion blur, etc. 
+
+To use the effects first create an empty GameObject and add the "Volume" Component to it: 
+![](images/post1.jpeg)
+Then create a new profile: 
+![](images/post2.jpeg)
+And add the effects with "Add Override": 
+![](images/post3.jpeg)
+
+To see the effects make sure that "Post Processing" is activated on your *(Main) Camera*: 
+![](images/post4.jpeg)
+
+# <a name="recording"></a>Recording Videos
+
+The easiest way to record videos is the *Unity Recorder* (Window -> General -> Recorder -> Recorder Video). Then click on "Add Recorder" and choose "Movie", here are the preferences that i recommend: 
+![](images/record.jpeg)
+
+*Please make sure that the path you selected is not inside your Unity project*
+
+> The recorder also offer the possibilty to record 360°-video. In this case use at least 4k as a resolution. 
+
+> If the image quality is not good enough you can export an image sequence (e.g. .PNG) and then create the video in Premiere or in other video editing softwares. 
 
 # <a name="sounds"></a>Sound 
 
