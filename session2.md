@@ -135,6 +135,7 @@ The easiest way to record videos is the *Unity Recorder* (Window -> General -> R
 
 > If the image quality is not good enough you can export an image sequence (e.g. .PNG) and then create the video in Premiere or in other video editing softwares. 
 
+
 # <a name="sounds"></a>Sound 
 
 To add sound to a scene create a new Audio Source: GameObject -> Audio -> Audio Source. 
@@ -154,6 +155,31 @@ Places to get free sounds:
 - [OpenGameArt](https://opengameart.org/art-search-advanced?field_art_type_tid%5B%5D=13)
 - [Soundcloud](https://soundcloud.com/)
 
+
+# <a name="mixamo">Bonus: Mixamo
+![](images/mixamo.gif)
+
+Mixamo offers a lot of Characters and Animations: https://www.mixamo.com
+
+To import in Unity: select character and animations and click on "Download", then choose these settings.
+![](images/mixamo1.jpeg)
+
+Import the fbx-file in Unity, select it in the project window and adjust the import settings: 
+![](images/mixamo2.jpeg)
+
+1. Extract textures -> Tab "Materials" -> Extract Textures...
+![](images/mixamo3.jpeg)
+
+2. Make sure the Animation is looped -> Tab "Animation"
+![](images/mixamo4.jpeg)
+
+3. Make sure the Rig is humanoid -> Tab "Rig"
+![](images/mixamo5.jpeg)
+
+4. Drag and Drop the Animation on the object in the hiearchy
+![](images/mixamo6.gif)
+
+When you now enter the Play Mode your characters should look and move like the one in mixamo.
 
 
 
