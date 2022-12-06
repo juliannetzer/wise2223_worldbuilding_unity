@@ -173,7 +173,7 @@ Import the fbx-file in Unity, select it in the project window and adjust the imp
 2. Make sure the Animation is looped -> Tab "Animation"
 ![](images/mixamo4.jpeg)
 
-3. Make sure the Rig is humanoid -> Tab "Rig"
+3. Make sure the Rig is humanoid -> Tab "Rig" -> and Click on "Apply"
 ![](images/mixamo5.jpeg)
 
 4. Drag and Drop the Animation on the object in the hiearchy
