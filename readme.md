@@ -12,3 +12,4 @@
 	- [Post Processing](session2.md#postprocessing)
 	- [Recording](session2.md#recording)
 	- [Sound](session2.md#sounds)
+	- [Bonus: Mixamo](session2.md#mixamo)
