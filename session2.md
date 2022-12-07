@@ -6,7 +6,7 @@
 ## Animations window 
 
 To animate an object, open the "Animation" window (Window -> Animation -> Anmation). 
-The select the GameObject you want to animate in the hierarchy window, now you should see this in the Animation Window: 
+Then select the GameObject you want to animate in the hierarchy window, now you should see this in the Animation Window: 
 ![](images/beginanimating.jpeg)
 Click on "Create" this creates an *Animation Clip*.
 
@@ -124,10 +124,10 @@ And add the effects with "Add Override":
 To see the effects make sure that "Post Processing" is activated on your *(Main) Camera*: 
 ![](images/post4.jpeg)
 
-# <a name="recording"></a>Recording Videos
+> There are also a lot of post-processing effects on github just make sure that you select the correct *render pipeline* (we currently the universal render pipeline (URP)). 
 
 The easiest way to record videos is the *Unity Recorder* (Window -> General -> Recorder -> Recorder Video). Then click on "Add Recorder" and choose "Movie", here are the preferences that i recommend: 
-![](images/record.jpeg)
+![](images/recording.jpeg)
 
 *Please make sure that the path you selected is not inside your Unity project*
 
