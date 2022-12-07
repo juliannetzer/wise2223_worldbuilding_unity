@@ -155,8 +155,9 @@ Places to get free sounds:
 - [OpenGameArt](https://opengameart.org/art-search-advanced?field_art_type_tid%5B%5D=13)
 - [Soundcloud](https://soundcloud.com/)
 
+> Tutorial how to work with Audio Tracks in the timeline: [Unity Learn: Audio and the Timeline](https://learn.unity.com/tutorial/working-with-audio-tracks-in-timeline#5f6126e3edbc2a0020034db9)
 
-# <a name="mixamo">Bonus: Mixamo
+# <a name="mixamo">Mixamo
 ![](images/mixamo.gif)
 
 Mixamo offers a lot of Characters and Animations: https://www.mixamo.com
