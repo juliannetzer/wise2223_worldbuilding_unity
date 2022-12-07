@@ -28,7 +28,7 @@ By default the Animation will loop, if you only want it to play once select the 
 ![](images/Animator.jpeg)
 
 *Note: we don't need the animator window for our course, but it's easier to understand the Unity Animation system if you know about it* 
-The Animator selects when your animation clips will be played, for example when you want to create a Character that has different states (like walking, standing, running) and one animation clip for each state you would animate this in the Animator window. In this case you would need a little bit of coding, you can find a easy tutorial here: 
+The Animator selects when your animation clips will be played, for example when you want to create a Character that has different states (like walking, standing, running) and one animation clip for each state you would animate this in the Animator window. In this case you would need a little bit of coding, you can find a tutorial here: 
 https://www.youtube.com/watch?v=tveRasxUabo
 
 ## Timeline
@@ -37,10 +37,9 @@ https://www.youtube.com/watch?v=tveRasxUabo
 The Timeline works best if you want to create a sequence of animations, like a transition scene or in our case a little movie sequence. 
 
 To work with the Timeline open the Timeline window (Window -> Sequencing -> Timeline). 
-Then create an empty GameObject (GameObject -> Create Empty) and name it "Director", this GameObject will control our movie sequence (and also our Cameras later). 
+Then create an empty GameObject (GameObject -> Create Empty) and name it "Director", this GameObject will control our movie sequence (and also our cameras later). 
 
-You can click on the settings wheel on the upper right side and choose whether you wanna work in seconds or in frames. 
-![](images/timing.jpeg)
+> You can click on the settings wheel on the upper right side and choose whether you wanna work in seconds or in frames. ![](images/timing.jpeg)
 
 ### Activating Objects in the Timeline
 With the timeline you can easily activate and deactivate objects. Right-click on the left side of the Timeline window and select "Activation Track" then drag and drop the GameObject you want to activate and deactive in the selector field. 
@@ -53,6 +52,7 @@ You can also animate object in the same way as in the Animation window, but in t
 Right click on the left side again and select "Animation Track" (always make sure that the "Director" GameObject is selected in the hierarchy) then drag and drop the object you want to animate in the selector field and click on record. 
 ![](images/animationtimeline.gif)
 
+> Here you can find some information about the other tracks you can use with the timeline: [Overview of the Timeline-Features](https://lukeduckett.medium.com/it-all-comes-down-to-timing-a-quick-guide-to-timeline-in-unity-fd96b26820f4),[Control Track](https://christopherhilton88.medium.com/what-is-a-control-track-in-timeline-f70588662cce), [Signal Track](https://blog.unity.com/technology/how-to-use-timeline-signals), [Playable Track](https://docs.unity3d.com/2018.3/Documentation/ScriptReference/Timeline.PlayableTrack.html)
 
 # <a name="cinemachine"></a>Cinemachine 
 With Cinemachine you can create complex camera behaviours without coding, like following a target, switching between different cameras, blending camera positions etc. 
