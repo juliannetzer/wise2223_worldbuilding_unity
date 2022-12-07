@@ -28,13 +28,13 @@ By default the Animation will loop, if you only want it to play once select the 
 ![](images/Animator.jpeg)
 
 *Note: we don't need the animator window for our course, but it's easier to understand the Unity Animation system if you know about it* 
-The Animator selects when your animation clips will be played, for example when you want to create a Character that has different states (like walking, standing, running) and one animation clip for each state you would animate this in the Animator window. In this case you would need a little bit of coding, you can find a tutorial here: 
+The Animator selects when your animation clips will be played, for example when you want to create a Character that has different states (like walking, standing, running) and one animation clip for each state you would animate this in the Animator window (in general: non-linear animations). In this case you would need a little bit of coding, you can find a tutorial here: 
 https://www.youtube.com/watch?v=tveRasxUabo
 
 ## Timeline
 ![](images/Timeline.jpeg)
 
-The Timeline works best if you want to create a sequence of animations, like a transition scene or in our case a little movie sequence. 
+The Timeline works best if you want to create a linear sequence of animations, like a transition scene or in our case a little movie sequence. 
 
 To work with the Timeline open the Timeline window (Window -> Sequencing -> Timeline). 
 Then create an empty GameObject (GameObject -> Create Empty) and name it "Director", this GameObject will control our movie sequence (and also our cameras later). 
