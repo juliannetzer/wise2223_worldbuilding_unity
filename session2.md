@@ -126,10 +126,16 @@ To see the effects make sure that "Post Processing" is activated on your *(Main)
 
 > There are also a lot of post-processing effects on github just make sure that you select the correct *render pipeline* (we currently the universal render pipeline (URP)). 
 
+# <a name="recording"></a>Recording
+
 The easiest way to record videos is the *Unity Recorder* (Window -> General -> Recorder -> Recorder Video). Then click on "Add Recorder" and choose "Movie", here are the preferences that i recommend: 
 ![](images/recording.jpeg)
 
 *Please make sure that the path you selected is not inside your Unity project*
+
+> If you can't find the Recorder in your Unity Project you can install it via the Package Manager: Window -> Package Manager. For the packages (upper left corner) choose "Unity Registry", search for "Recorder" and click "Install"
+![](images/recorder_2.jpeg)
+
 
 > The recorder also offer the possibilty to record 360°-video. In this case use at least 4k as a resolution. 
 
