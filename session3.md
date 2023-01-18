@@ -76,6 +76,6 @@ You can find a step by step tutorial here:
 In the Taskbar go to: Assets -> Import Package -> Costum Package
 
 ## Merging 
-Then you can open both scenes and drag & drop the objects that you need to your new scene: 
+Then you can open both scenes (drag & drop the scene in hierarchy window of the opened scene) and drag & drop the objects that you need to your new scene: 
 ![](images/merge.gif)
 
