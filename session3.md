@@ -63,3 +63,19 @@ What you need from Clo3D and Mixamo:
 
 When you now hit "Play" the Garment and the character should move at the same time
 
+# <a name="merging"></a> Merging Scenes 
+
+> Make sure to always make a copy (duplicate the whole folder) of the Unity project before you start merging scenes. 
+
+## Export Scene
+You can find a step by step tutorial here: 
+[Export Scenes in Unity](https://vionixstudio.com/2021/10/25/export-a-scene-in-unity/)
+
+## Import Scene 
+
+In the Taskbar go to: Assets -> Import Package -> Costum Package
+
+## Merging 
+Then you can open both scenes and drag & drop the objects that you need to your new scene: 
+![](images/merge.gif)
+

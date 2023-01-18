@@ -15,4 +15,5 @@
 	- [Mixamo](session2.md#mixamo)
 - [Session 3](session3.md)
 	- [Importing from Clo3D](session3.md)
+	- [Merging Scenes](session3.md#merging)
 
