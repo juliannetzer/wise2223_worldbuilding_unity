@@ -7,7 +7,7 @@
 
 What you need from Clo3D and Mixamo: 
 - .fbx-file (only character with animation, without garment; from Mixamo; "FBX for Unity")
-- .dae-file (only garment with baked animation from Clo3D)
+- .abc-file (only garment with baked animation from Clo3D)
 - .png-Texture (baked diffuse map from Clo3D; if needed also normal-map (in case you are working with structures in the fabric) & metallic-map(in case you are working with reflections))
 
 ### 1. Importing the .fbx from mixamo 
@@ -31,13 +31,13 @@ What you need from Clo3D and Mixamo:
 
 
 
-### 2. Importing the .dae from Clo3D 
+### 2. Importing the .abc from Clo3D 
 1. Install the Alembic-Package:
 	- In the Taskbar go to "Window -> Package Manager"
 	![](images/packagemanager1.jpeg)
 	- Change Packages to "Unity Registry", search for "Alembic", select the pacakge and click on "Install"
 	![](images/packagemanager2.jpeg)
-2. Import (Drag & Drop) the .dae-file in the project-window 
+2. Import (Drag & Drop) the .abc-file in the project-window 
 3. Drag & Drop the imported garment in your scene and _make sure that the position of the GameObject is set to 0,0,0)_ 
 
 
@@ -75,7 +75,7 @@ You can find a step by step tutorial here:
 
 In the Taskbar go to: Assets -> Import Package -> Costum Package
 
-## Merging 
+## Merge 
 Then you can open both scenes (drag & drop the scene in hierarchy window of the opened scene) and drag & drop the objects that you need to your new scene: 
 ![](images/merge.gif)
 
