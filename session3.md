@@ -13,7 +13,8 @@ What you need from Clo3D and Mixamo:
 ### 1. Importing the .fbx from mixamo 
 
 1. Drag and Drop the .fbx-file from Mixamo (only character with animation, without garment; from Mixamo; "FBX for Unity") in the Unity project window
-2. If you want a looped Animation: Select the Animation Tab and Check "Loop Time"
+2. Click on the imported file in the project window and open the Inspector window (if it is not shown automatically). 
+2. (Optional) If you want a looped Animation: Select the Animation Tab and Check "Loop Time"
 	![](images/animation_garment.jpeg)	
 3. Go to the Materials Tab and click on "Extract Textures..."
 4. In the Materials Tab click on "Extract Materials..."
@@ -42,12 +43,13 @@ What you need from Clo3D and Mixamo:
 
 ### 3. Importing & applying the texture
 1. Import the texture from Clo3D into Unity (Drag & Drop the .png in the project window)
-2. (Optional) If you are working with transparency, select the imported .png in the project window, and make sure that "Alpha is Transparency" is selected in the Inpector
+2. (Optional) If you are working with transparency, select the imported .png in the project window, and make sure that "Alpha is Transparency" is selected in the Inspector
 	![](images/transparency1.jpeg)
 3. Create a new Material (In Project window: Right Click -> Create -> Material) and apply the Material to the child-object of the garment-GameObject in the Scene
 	![](images/texture1.gif)
 4. drag & drop the imported texture in the "Base Map"-field 
 	![](images/texture2.gif)
+5. (Optional) If you are working with transparency make sure that the "Surface Type" is set to "Transparent" on the material. 
 
 
 ### 4. Create Animation for the garment
